@@ -2,8 +2,12 @@
 
 namespace Tyuiu.NasadukJA.Sprint1.Task5.V2.Lib
 {
-    public class DataService
+    public class DataService : ISprint1Task5V2
     {
-
+        public int FahrenheitToСelsius(double x)
+        {
+            double res = (x - 32) / 1.8;
+            return Convert.ToInt32(res);
+        }
     }
 }

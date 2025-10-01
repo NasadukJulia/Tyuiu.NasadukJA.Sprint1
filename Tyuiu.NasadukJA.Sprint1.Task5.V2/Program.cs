@@ -7,25 +7,27 @@ Console.Title = "Спринт #1 | Выполнила: Насадюк Ю. А. | 
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* Спринт #1                                                               *");
-Console.WriteLine("* Тема: Операторы составного присваивания                                 *");
-Console.WriteLine("* Задание #3                                                              *");
-Console.WriteLine("* Вариант #11                                                             *");
+Console.WriteLine("* Тема: Преобразование типов и класс Convert                              *");
+Console.WriteLine("* Задание #5                                                              *");
+Console.WriteLine("* Вариант #2                                                              *");
 Console.WriteLine("* Выполнила: Насадюк Юлия Андреевна | СМАРТб-25-1                         *");
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* УСЛОВИЕ:                                                                *");
-Console.WriteLine("* Написать программу, которая вычисляет площадь треугольника,             *");
-Console.WriteLine("* исходя из координат его углов.                                          *");
+Console.WriteLine("* Написать программу, которая запрашивает значение температуры в градусах *");
+Console.WriteLine("* Фаренгейта, и переводит в градусы Цельсия, выводя результат на экран.   *");
 Console.WriteLine("*                                                                         *");
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
-
+Console.WriteLine("Введите температуру в градусах Фаренгейта:");
+double x = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
 
-Console.WriteLine("Площадь треугольника = " + ds.TriangleArea(x1, y1, x2, y2, x3, y3));
+int res = ds.FahrenheitToСelsius(x);
+Console.WriteLine("Температура в градусах Цельсия = " + res);
 
 Console.ReadLine();
