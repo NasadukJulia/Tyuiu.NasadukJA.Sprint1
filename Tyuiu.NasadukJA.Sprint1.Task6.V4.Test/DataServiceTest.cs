@@ -6,8 +6,13 @@ namespace Tyuiu.NasadukJA.Sprint1.Task6.V4.Test
     public sealed class DataServiceTest
     {
         [TestMethod]
-        public void ValidExpression()
+        public void ValidString()
         {
+            string strTest = "красный длинный";
+            DataService ds = new DataService();
+            string res = ds.CheckDoubleN(strTest);
+            string wait = "длинный";
+            Assert.AreEqual(wait, res);
         }
     }
 }

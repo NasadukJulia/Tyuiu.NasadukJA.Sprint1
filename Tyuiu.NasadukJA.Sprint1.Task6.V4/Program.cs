@@ -7,25 +7,26 @@ Console.Title = "Спринт #1 | Выполнила: Насадюк Ю. А. | 
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* Спринт #1                                                               *");
-Console.WriteLine("* Тема: Операторы составного присваивания                                 *");
-Console.WriteLine("* Задание #3                                                              *");
-Console.WriteLine("* Вариант #11                                                             *");
+Console.WriteLine("* Тема: Работа со строками класс String                                   *");
+Console.WriteLine("* Задание #6                                                              *");
+Console.WriteLine("* Вариант #4                                                              *");
 Console.WriteLine("* Выполнила: Насадюк Юлия Андреевна | СМАРТб-25-1                         *");
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* УСЛОВИЕ:                                                                *");
-Console.WriteLine("* Написать программу, которая вычисляет площадь треугольника,             *");
-Console.WriteLine("* исходя из координат его углов.                                          *");
+Console.WriteLine("* Написать программу, которая запрашивает у пользователя текст,           *");
+Console.WriteLine("* и выводит на экран все слова с удвоенной н ('нн').                      *");
 Console.WriteLine("*                                                                         *");
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
-
+Console.WriteLine("Введите текст:");
+string str = Console.ReadLine();
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
 
-Console.WriteLine("Площадь треугольника = " + ds.TriangleArea(x1, y1, x2, y2, x3, y3));
+Console.WriteLine(ds.CheckDoubleN(str));
 
 Console.ReadLine();
