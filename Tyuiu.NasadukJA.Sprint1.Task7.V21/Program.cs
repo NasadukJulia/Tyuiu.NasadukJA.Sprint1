@@ -7,25 +7,35 @@ Console.Title = "Спринт #1 | Выполнила: Насадюк Ю. А. | 
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* Спринт #1                                                               *");
-Console.WriteLine("* Тема: Операторы составного присваивания                                 *");
-Console.WriteLine("* Задание #3                                                              *");
-Console.WriteLine("* Вариант #11                                                             *");
+Console.WriteLine("* Тема: Добавление к решению итоговых проектов по спринту                 *");
+Console.WriteLine("* Задание #7                                                              *");
+Console.WriteLine("* Вариант #21                                                             *");
 Console.WriteLine("* Выполнила: Насадюк Юлия Андреевна | СМАРТб-25-1                         *");
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* УСЛОВИЕ:                                                                *");
-Console.WriteLine("* Написать программу, которая вычисляет площадь треугольника,             *");
-Console.WriteLine("* исходя из координат его углов.                                          *");
+Console.WriteLine("* Написать программу, которая вычисляет математическое выражение          *");
+Console.WriteLine("* по исходным значениям данных, вводимых пользователем.                   *");
 Console.WriteLine("*                                                                         *");
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
+Console.WriteLine("*            x             2                                              *");
+Console.WriteLine("*           y         sin(x  ) + cos(y)                                   *");
+Console.WriteLine("* z = ------------- + ----------------- * tg(xy)                          *");
+Console.WriteLine("*               x                                                         *");
+Console.WriteLine("*     cos(x) - ---     cos(x) - sin(y)                                    *");
+Console.WriteLine("*               3                                                         *");
 
-
+double x, y;
+Console.WriteLine("Введите значение X:");
+x = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите значение Y:");
+y = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
 
-Console.WriteLine("Площадь треугольника = " + ds.TriangleArea(x1, y1, x2, y2, x3, y3));
+Console.WriteLine(ds.Calculate(x, y));
 
 Console.ReadLine();
